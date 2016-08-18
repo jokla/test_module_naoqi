@@ -1,13 +1,13 @@
 # test_module_naoqi
-Simple module for testing, developed using the new naoqi framework.
+Simple module to use as template, developed using the new naoqi framework. It is tested with Pepper.
 You can run it on a remote computer or directly on the robot's CPU.  
 - [Reference](http://doc.aldebaran.com/2-4/dev/tutos/create_a_new_service.html#dev-tuto-create-service)  
 
 This module contains two simple functions:
 * `sayHelloWord()` : when called, the robot says "Hello word!";
-* `getJointValues (std::vector<std::string> jointNames)`: when called, the position angles of the joints defined in jointNames vector are returned.
+* `getJointValues (std::vector<std::string> jointNames)`: when called, the position angles of the joints defined in the `jointNames` vector are returned.
 
-Once the module is running (in remote or in the robot) you can call the previous functions. You can find an example here: [test_client_naoqi](https://github.com/jokla/test_client_naoqi).
+Once the module is running (in remote or local) you can call the previous functions. You can find an example here: [test_client_naoqi](https://github.com/jokla/test_client_naoqi).
 
 
 

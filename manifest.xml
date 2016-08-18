@@ -1,0 +1,11 @@
+<package uuid="test_module" version="0.1.0">
+  <services>
+
+    <service name="myservice" autorun="true" execStart="bin/myservice" />
+    <executableFiles>
+      <file path="bin/myservice" />
+    </executableFiles>
+
+  </services>
+
+</package>

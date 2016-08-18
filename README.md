@@ -7,7 +7,7 @@ This module contains two simple functions:
 * `sayHelloWord()` : when called, the robot says "Hello word!";
 * `getJointValues (std::vector<std::string> jointNames)`: when called, the position angles of the joints defined in jointNames vector are returned.
 
-Once the module is running (in remote or in the robot) you can call the previous functions. You can find an example here:[test_client_naoqi](https://github.com/jokla/test_client_naoqi).
+Once the module is running (in remote or in the robot) you can call the previous functions. You can find an example here: [test_client_naoqi](https://github.com/jokla/test_client_naoqi).
 
 
 

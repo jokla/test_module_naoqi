@@ -13,9 +13,9 @@ Once the module is running (in remote or local) you can call the previous functi
 
 ## Prerequisites:
 * Install [Python](http://doc.aldebaran.com/2-4/dev/python/install_guide.html) and the C++ SDK ([Instruction Here](http://jokla.me/robotics/install-sdk-c-naoqi/)) 
-*  If you are interested to run the module locally:
-  * Download the Cross Toolchain 2.4.3 Linux 64
-  * Create a toolchain for the cross compilation (I have called `atom_2_4`) ([Instructions](http://doc.aldebaran.com/2-4/dev/cpp/install_guide.html#e-compile-and-run-an-example))
+
+
+
 ## Instructions:  
 * Clone the repository in your workspace:
 `$ git@github.com:jokla/test_module_naoqi.git `
@@ -31,6 +31,8 @@ Once the module is running (in remote or local) you can call the previous functi
  Arguments reference: [link](http://doc.aldebaran.com/2-4/dev/libqi/guide/qi-app-arguments.html)
 
 ### Run the module locally 
+* Download the Cross Toolchain 2.4.3 Linux 64
+* Create a toolchain for the cross compilation (I have called it `atom_2_4`) ([Instructions](http://doc.aldebaran.com/2-4/dev/cpp/install_guide.html#e-compile-and-run-an-example))   
 
 * Configure local module:  
 `$ qibuild configure -c atom_2_4`  

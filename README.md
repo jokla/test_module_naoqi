@@ -78,7 +78,7 @@ The service `myservice` is running and it has the ID 155
 ```
 155 [myservice]
   * Info:
-   machine   45f95a4c-0bb1-470c-a026-01a2a49e3f1b
+   machine   45f95a4c-0bb1-470c-a026-01b2a49e3f1b
    process   7678
    endpoints tcp://127.0.0.1:39890
              tcp://198.18.0.1:39890

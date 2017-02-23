@@ -52,6 +52,6 @@ HeadPitch: 0.637045
 * Build:
 `$ qibuild make -c atom_2_4`
 * Create pkg:  
-`$ qipkg make-package test_module.pml -c atom_2_4`
+`$qipkg make-package test_module_naoqi.pml -c atom_2_4`
 * Deploy in Pepper:  
-`$ qipkg deploy-package test_module-0.1.0.pkg --url nao@127.0.0.1`
+`$ qipkg deploy-package test_module_naoqi-0.1.0.pkg --url nao@127.0.0.1`

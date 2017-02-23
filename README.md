@@ -53,5 +53,43 @@ HeadPitch: 0.637045
 `$ qibuild make -c atom_2_4`
 * Create pkg:  
 `$ qipkg make-package test_module_naoqi.pml -c atom_2_4`
-* Deploy in Pepper:  
-`$ qipkg deploy-package test_module_naoqi-0.1.0.pkg --url nao@127.0.0.1`
+* Deploy in Pepper (change the IP with the good one):  
+`$ qipkg deploy-package test_module_naoqi-0.1.0.pkg --url nao@192.168.0.2`
+* Now connect to Pepper:
+`$ ssh nao@192.168.0.2`
+* Check if the package is running:
+`pepper [0] ~ $ qicli info `
+
+```
+001 [ServiceDirectory]
+002 [LogManager]
+003 [ALFileManager]
+004 [ALMemory]
+...
+150 [ALAppsAnalytics]
+154 [pepper_control]
+155 [myservice]
+
+```
+The service `myservice` is running and it has the ID 155
+* Check the function inside the service:
+`pepper [0] ~$ qicli info 155 `
+
+```
+155 [myservice]
+  * Info:
+   machine   45f95a4c-0bb1-470c-a026-01a2a49e3f1b
+   process   7678
+   endpoints tcp://127.0.0.1:39890
+             tcp://198.18.0.1:39890
+             tcp://192.168.0.24:39890
+  * Methods:
+   100 getJointValues List<Float> (List<String>)
+   101 sayHelloWord   Void ()
+
+```
+* Now call `sayHelloWord`
+`pepper [0] ~$ qicli call 155.101 `
+The robot should say "Hello World"
+
+

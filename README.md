@@ -53,11 +53,11 @@ HeadPitch: 0.637045
 `$ qibuild make -c atom_2_4`
 * Create pkg:  
 `$ qipkg make-package test_module_naoqi.pml -c atom_2_4`
-* Deploy in Pepper (change the IP with the good one):  
+* Deploy in Pepper (change the IP with the good one):   
 `$ qipkg deploy-package test_module_naoqi-0.1.0.pkg --url nao@192.168.0.2`
-* Now connect to Pepper:
+* Now connect to Pepper:   
 `$ ssh nao@192.168.0.2`
-* Check if the package is running:
+* Check if the package is running:   
 `pepper [0] ~ $ qicli info `
 
 ```
@@ -71,7 +71,7 @@ HeadPitch: 0.637045
 155 [myservice]
 
 ```
-The service `myservice` is running and it has the ID 155
+The service `myservice` is running and it has the ID 155  
 * Check the function inside the service:
 `pepper [0] ~$ qicli info 155 `
 
@@ -88,8 +88,8 @@ The service `myservice` is running and it has the ID 155
    101 sayHelloWord   Void ()
 
 ```
-* Now call `sayHelloWord`
-`pepper [0] ~$ qicli call 155.101 `
-The robot should say "Hello World"
+* Now call `sayHelloWord`   
+`pepper [0] ~$ qicli call 155.101 `  
+The robot should say "Hello World"   
 
 

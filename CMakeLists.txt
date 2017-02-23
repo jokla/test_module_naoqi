@@ -1,7 +1,7 @@
 # In CMakeLists.txt
 
 cmake_minimum_required(VERSION 2.8)
-project(test_module)
+project(test_module_naoqi)
 find_package(qibuild)
 
 include_directories(".")

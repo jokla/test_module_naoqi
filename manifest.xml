@@ -1,11 +1,15 @@
-<package uuid="test_module" version="0.1.0">
+<package uuid="test_module_naoqi" version="0.1.0">
   <services>
 
-    <service name="myservice" autorun="true" execStart="bin/myservice" />
+  <service name="myservice" autorun="true" execStart="bin/myservice" />
     <executableFiles>
       <file path="bin/myservice" />
     </executableFiles>
-
   </services>
+
+   <requirements>
+        <naoqiRequirement minVersion="2.3" />
+        <robotRequirement model="JULIETTE_Y20" />
+    </requirements>
 
 </package>

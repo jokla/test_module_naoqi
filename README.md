@@ -50,7 +50,7 @@ HeadPitch: 0.637045
 * Configure local module:  
 `$ qibuild configure -c atom_2_4`  
 * Build:
-`$ qibuild build -c atom_2_4`
+`$ qibuild make -c atom_2_4`
 * Create pkg:  
 `$ qipkg make-package test_module.pml -c atom_2_4`
 * Deploy in Pepper:  

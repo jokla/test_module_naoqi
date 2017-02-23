@@ -8,6 +8,6 @@
   -->
 
   <!-- if written in C++ -->
-  <qibuild name="test_module" />
+  <qibuild name="test_module_naoqi" />
 
 </Package>
